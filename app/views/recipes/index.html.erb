@@ -1,0 +1,9 @@
+<h1>This is a placeholder for a recipe index page</h1>
+
+
+<h2>Recipes of Foosta</h2>
+  <% @recipes.each do |recipe| %>
+   <li><%= recipe.name %></li>
+   <%= link_to "View Recipe", recipe_path(id: recipe.id) %>
+<% end %>
+
